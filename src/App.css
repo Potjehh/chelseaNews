@@ -1,38 +1,53 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #001489;
   color: white;
+  background-image: url(https://img.chelseafc.com/image/upload/f_auto,c_pad,w_230,h_230,ar_1,q_auto:best/Site%20Chelsea%20Badges/Main_Website_Badge_-_Colour.png);
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position-x: 25px;
+ 
+  padding: 30px;
+ 
+}
+h1 {
+  margin-top: 0;
+}
+a{
+  color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.newsList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.newsItem {
+  background-color: #ffffff11;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newsItem img {
+  max-width: 100%; 
+  height: auto;
+}
+.buttonStyle {
+
+ 
+  z-index: 1; 
+  background-color: #001489;
+  padding: 10px;
+  width: 100%;
+}
+
+.buttonStyle button{
+  color: white;
+  background-color: #001489;
+  border: 3px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
 }
